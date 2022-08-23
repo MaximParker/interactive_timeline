@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="icon" type="image/x-icon" href="images/logo-transparent.png"> -->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -18,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <script type="text/javascript" src="script.js"></script>
@@ -49,32 +49,10 @@
 
             <div class="d-flex justify-content-start" style="height:1000px">
 
-
-            </div>
-        </div>
-
-        <div id="age0" class="row" style="margin: auto; background-color: rgb(53, 50, 37);">
-
-            <div class="d-flex justify-content-start">
-                <div class="d-flex flex-column century-scale">
-                    <div class="p-2 century-marker-dark"></div>
-                    <div class="p-2 century-marker-light"></div>
-                    <div class="p-2 century-marker-dark"></div>
-                    <div class="p-2 century-marker-light"></div>
-                    <div class="p-2 century-marker-dark"></div>
-                    <div class="p-2 century-marker-light"></div>
-                    <div class="p-2 century-marker-dark"></div>
-                    <div class="p-2 century-marker-light"></div>
-                    <div class="p-2 century-marker-dark"></div>
-                    <div class="p-2 century-marker-light"></div>
-                </div>
-            </div>
-
-            <div style="height:1000px">
                 <div id="MAJOR_EVENT_ONE" class="d-flex justify-content-end box-major-event" data-toggle="modal"
                     data-target="#exampleModal" style="border-top: 2px solid goldenrod;">
                     <div class="icon-major-event" style="background-color: goldenrod">
-                        <img src="images/placeholder.png"/>
+                        <img src="images/placeholder.png" />
                         <h3 style="color:goldenrod">MAJOR_EVENT_ONE »</h3>
                     </div>
                     <script>
@@ -88,7 +66,7 @@
                 <div id="SIGNIFICANT_EVENT_ONE" class="d-flex justify-content-end box-medium-event" data-toggle="modal"
                     data-target="#exampleModal" style="border-top: 2px solid yellow;">
                     <div class="icon-medium-event" style="background-color: yellow">
-                        <img src="images/placeholder.png"/>
+                        <img src="images/placeholder.png" />
                         <h4 style="color:yellow">SIGNIFICANT_EVENT_ONE »</h4>
                     </div>
                     <script>
@@ -111,6 +89,233 @@
                         }
                     </script>
                 </div>
+
+                <div class="d-flex flex-column century-scale">
+                    <h1 style="color:rgba(255, 255, 255, 0.055)">Everon timeline</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="ageZero" class="row" style="margin: auto; background-color: rgb(53, 50, 37);">
+            <!-- Age Zero (0 - 999) -->
+            <div class="d-flex justify-content-start">
+                <div class="d-flex flex-column century-scale">
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                </div>
+            </div>
+
+            <div style="height:1000px">
+                <!-- Events -->
+                <div id="UNIM_FOUNDED" class="d-flex justify-content-end box-major-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:1000px; border-top: 2px solid goldenrod;">
+                    <div class="icon-major-event" style="background-color: goldenrod">
+                        <img src="images/placeholder.png" />
+                        <h3 style="color:goldenrod">Unim founded »</h3>
+                    </div>
+                    <script>
+                        document.getElementById("UNIM_FOUNDED").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "The Union Imperium is founded"
+                            document.getElementById('modal-body').innerHTML = "<p>Records are scarce before this time thanks to centuries of war and destruction.</p><p>To remedy this, Saint Lucian calls together the highest scholars from across the Nexus to form the Union Imperium (Unim).</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="PLACEHOLDER_1" class="d-flex justify-content-end box-medium-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:1100px; border-top: 2px solid yellow;">
+                    <div class="icon-medium-event" style="background-color: yellow">
+                        <img src="images/placeholder.png" />
+                        <h4 style="color:yellow">PLACEHOLDER_1 »</h4>
+                    </div>
+                    <script>
+                        document.getElementById("PLACEHOLDER_1").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "PLACEHOLDER_1"
+                            document.getElementById('modal-body').innerHTML = "PLACEHOLDER_1"
+                        }
+                    </script>
+                </div>
+
+                <div id="PLACEHOLDER_2" class="d-flex justify-content-end box-minor-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:1200px; border-top: lime 2px solid;">
+                    <div class="icon-minor-event" style="background-color: lime">
+                        <h5 style="color:lime">PLACEHOLDER_2 »</h5>
+                    </div>
+                    <script>
+                        document.getElementById("PLACEHOLDER_2").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "PLACEHOLDER_2"
+                            document.getElementById('modal-body').innerHTML = "PLACEHOLDER_2"
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="d-flex flex-column century-scale">
+                <h1 style="color:rgba(255, 255, 255, 0.055)">0</h1>
+            </div>
+        </div>
+
+        <div id="ageOne" class="row" style="margin: auto; background-color: rgb(34, 32, 24);">
+            <!-- Age One (1000, 1999) -->
+            <div class="d-flex justify-content-start">
+                <div class="d-flex flex-column century-scale">
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                </div>
+            </div>
+
+            <div style="height:1000px">
+                <!-- Events -->
+            </div>
+            <div class="d-flex flex-column century-scale">
+                <h1 style="color:rgba(255, 255, 255, 0.055)">1000</h1>
+            </div>
+        </div>
+
+        <div id="ageTwo" class="row" style="margin: auto; background-color: rgb(31, 27, 24);">
+            <!-- Age Two (2000 - 2999) -->
+            <div class="d-flex justify-content-start">
+                <div class="d-flex flex-column century-scale">
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                </div>
+            </div>
+
+            <div style="height:1000px">
+                <!-- Events -->
+            </div>
+            <div class="d-flex flex-column century-scale">
+                <h1 style="color:rgba(255, 255, 255, 0.055)">2000</h1>
+            </div>
+        </div>
+
+        <div id="ageThree" class="row" style="margin: auto; background-color: rgb(22, 19, 16);">
+            <!-- Age Three (3000 - 3999) -->
+            <div class="d-flex justify-content-start">
+                <div class="d-flex flex-column century-scale">
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                </div>
+            </div>
+
+            <div style="height:1000px">
+                <!-- Events -->
+
+                <div id="ORDER_OF_EXILE" class="d-flex justify-content-end box-major-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:4333px; border-top: 2px solid goldenrod;">
+                    <div class="icon-major-event" style="background-color: goldenrod">
+                        <img src="images/placeholder.png" />
+                        <h3 style="color:goldenrod">Gods exiles »</h3>
+                    </div>
+                    <script>
+                        document.getElementById("ORDER_OF_EXILE").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "The Weeping Plague davastates the Nexus"
+                            document.getElementById('modal-body').innerHTML = "<p>A disease caused by contact with the Skurge causes blood to spill from the eyes and nose, infectious wounds to appear on the body, psychosis, and death.</p><p>The pandemic rips through the Nexus, causing millions to die in pain and squalor.</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="THE_SEARCHES" class="d-flex justify-content-end box-major-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:4094px; width:450px; border-top: 2px solid goldenrod;">
+                    <div class="icon-major-event" style="background-color: goldenrod">
+                        <img src="images/THE_SEARCHES.png" />
+                        <h3 style="color:goldenrod">The Searches begin »</h3>
+                    </div>
+                    <script>
+                        document.getElementById("THE_SEARCHES").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "The Searches begin"
+                            document.getElementById('modal-body').innerHTML = "<p>The Black Mail are sent out across the world to search answers: Where are the pieces of the fallen guardian Kazar? What arcane artefacts lie in the wrong hands? Why is there so much suffering in the world, when the Preceptor is meant to represent divine guidance?</p><p>The Book of Complaints amounts to hundreds of volumes.</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="BLACK_MAIL_FORMED" class="d-flex justify-content-end box-medium-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:4078px; width: 165px; border-top: 2px solid yellow;">
+                    <div class="icon-medium-event" style="background-color: yellow">
+                        <img src="images/BLACK_MAIL.png" />
+                        <h4 style="color:yellow">Black Mail sanctioned »</h4>
+                    </div>
+                    <script>
+                        document.getElementById("BLACK_MAIL_FORMED").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "The Exalted Order of the Black Mail Knights"
+                            document.getElementById('modal-body').innerHTML = "<p>An order is established to reinforce the City of Statues during the plague.</p><p>They are notoriously fierce.</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="WEEPING_CURSE" class="d-flex justify-content-end box-major-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:4031px; border-top: 2px solid goldenrod;">
+                    <div class="icon-major-event" style="background-color: goldenrod">
+                        <img src="images/WEEPING_PLAGUE.png" />
+                        <h3 style="color:goldenrod">The Weeping Plague »</h3>
+                    </div>
+                    <script>
+                        document.getElementById("WEEPING_CURSE").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "The Weeping Plague davastates the Nexus"
+                            document.getElementById('modal-body').innerHTML = "<p>A disease caused by contact with the Skurge causes blood to spill from the eyes and nose, infectious wounds to appear on the body, psychosis, and death.</p><p>The pandemic rips through the Nexus, causing millions to die in pain and squalor.</p>"
+                        }
+                    </script>
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-column century-scale">
+                <h1 style="color:rgba(255, 255, 255, 0.055)">3000</h1>
+            </div>
+        </div>
+
+        <div id="ageFour" class="row" style="margin: auto; background-color: rgb(22, 15, 14);">
+            <!-- Age Four (4000 - 4999) -->
+            <div class="d-flex justify-content-start">
+                <div class="d-flex flex-column century-scale">
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                    <div class="p-2 century-marker-dark"></div>
+                    <div class="p-2 century-marker-light"></div>
+                </div>
+            </div>
+
+            <div style="height:1000px">
+                <!-- Events -->
+            </div>
+            <div class="d-flex flex-column century-scale">
+                <h1 style="color:rgba(255, 255, 255, 0.055)">4000</h1>
             </div>
         </div>
     </div>
