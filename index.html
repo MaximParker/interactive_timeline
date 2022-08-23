@@ -24,18 +24,36 @@
 
 <body>
     <div id="viewport" style="background-color: white;">
-        <div id="age_prehistoric" class="row" style="margin: auto; background-color: rgb(15, 15, 15);">
+
+        <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modalTitle">Modal title</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span id="close-button" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div id="modal-body" class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="agePrehistoric" class="row" style="margin: auto; background-color: rgb(15, 15, 15);">
 
             <div class="d-flex justify-content-start">
             </div>
 
             <div class="d-flex justify-content-start" style="height:1000px">
-                
+
 
             </div>
         </div>
 
-        <div id="age_0" class="row" style="margin: auto; background-color: rgb(53, 50, 37);">
+        <div id="age0" class="row" style="margin: auto; background-color: rgb(53, 50, 37);">
 
             <div class="d-flex justify-content-start">
                 <div class="d-flex flex-column century-scale">
@@ -53,42 +71,47 @@
             </div>
 
             <div style="height:1000px">
-                <div class="d-flex justify-content-end box-major-event" data-toggle="modal" data-target="#exampleModal" style="border-top: 2px solid goldenrod;">
+                <div id="MAJOR_EVENT_ONE" class="d-flex justify-content-end box-major-event" data-toggle="modal"
+                    data-target="#exampleModal" style="border-top: 2px solid goldenrod;">
                     <div class="icon-major-event" style="background-color: goldenrod">
-                        <h3 style="color:goldenrod">Major event here »</h3>
+                        <h3 style="color:goldenrod">MAJOR_EVENT_ONE »</h3>
                     </div>
+                    <script>
+                        document.getElementById("MAJOR_EVENT_ONE").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "MAJOR_EVENT_ONE"
+                            document.getElementById('modal-body').innerHTML = "MAJOR_EVENT_ONE"
+                        }
+                    </script>
                 </div>
 
-                <div class="d-flex justify-content-end box-medium-event" style="border-top: 2px solid yellow;">
+                <div id="SIGNIFICANT_EVENT_ONE" class="d-flex justify-content-end box-medium-event" data-toggle="modal"
+                    data-target="#exampleModal" style="border-top: 2px solid yellow;">
                     <div class="icon-medium-event" style="background-color: yellow">
-                        <h4 style="color:yellow">Significant event name here</h4>
+                        <h4 style="color:yellow">SIGNIFICANT_EVENT_ONE</h4>
                     </div>
+                    <script>
+                        document.getElementById("SIGNIFICANT_EVENT_ONE").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "SIGNIFICANT_EVENT_ONE"
+                            document.getElementById('modal-body').innerHTML = "SIGNIFICANT_EVENT_ONE"
+                        }
+                    </script>
                 </div>
 
-                <div class="d-flex justify-content-end box-minor-event" style="border-top: lime 2px solid;">
+                <div id="MINOR_EVENT_ONE" class="d-flex justify-content-end box-minor-event" data-toggle="modal"
+                    data-target="#exampleModal" style="border-top: lime 2px solid;">
                     <div class="icon-minor-event" style="background-color: lime">
-                        <h5 style="color:lime">Minor event name here</h5>
+                        <h5 style="color:lime">MINOR_EVENT_ONE</h5>
                     </div>
+                    <script>
+                        document.getElementById("MINOR_EVENT_ONE").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "MINOR_EVENT_ONE"
+                            document.getElementById('modal-body').innerHTML = "MINOR_EVENT_ONE"
+                        }
+                    </script>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-          </div>
-        </div>
-      </div>
 </body>
 
 </html>

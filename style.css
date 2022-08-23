@@ -2,6 +2,18 @@
     cursor: crosshair;
 }
 
+.modal {
+    cursor:default;
+}
+
+.modal-dialog{
+    cursor:default;
+}
+
+#close-button{
+    cursor:pointer;
+}
+
 .btn-circle.btn-xl {
     width: 100px;
     height: 100px;
@@ -35,6 +47,7 @@ h3 {
 
 h3:hover {
     text-decoration: underline;
+    cursor:pointer;
 }
 
 h4 {
@@ -47,6 +60,7 @@ h4 {
 
 h4:hover {
     text-decoration: underline;
+    cursor:pointer;
 }
 
 h5 {
@@ -59,12 +73,13 @@ h5 {
 
 h5:hover {
     text-decoration: underline;
+    cursor:pointer;
 }
 
 .box-major-event {
     position: absolute;
     top: 1000px;
-    width: 150px;
+    width: 110px;
     border-top: white 2px solid;
 }
 
@@ -80,7 +95,7 @@ h5:hover {
 .box-medium-event {
     position: absolute;
     top: 1100px;
-    width: 100px;
+    width: 110px;
     border-top: white 2px solid;
 }
 
@@ -96,7 +111,7 @@ h5:hover {
 .box-minor-event {
     position: absolute;
     top: 1200px;
-    width: 200px;
+    width: 110px;
     border-top: white 2px solid;
 }
 
