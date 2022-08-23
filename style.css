@@ -3,15 +3,15 @@
 }
 
 .modal {
-    cursor:default;
+    cursor: default;
 }
 
-.modal-dialog{
-    cursor:default;
+.modal-dialog {
+    cursor: default;
 }
 
-#close-button{
-    cursor:pointer;
+#close-button {
+    cursor: pointer;
 }
 
 .btn-circle.btn-xl {
@@ -24,7 +24,16 @@
 }
 
 img {
+    max-width: 96%;
+    max-height: 96%;
+    position: relative;
+    left: 2%;
+    top: 2%;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
     overflow: hidden;
+    border-radius: 50%;
 }
 
 .century-marker-dark {
@@ -40,27 +49,27 @@ img {
 h3 {
     position: relative;
     left: 100px;
-    top: 28px;
+    top: -65px;
     min-width: max-content;
     padding-left: 5px;
 }
 
 h3:hover {
     text-decoration: underline;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 h4 {
     position: relative;
     left: 60px;
-    top: 13px;
+    top: -43px;
     min-width: max-content;
     padding-left: 5px;
 }
 
 h4:hover {
     text-decoration: underline;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 h5 {
@@ -73,7 +82,7 @@ h5 {
 
 h5:hover {
     text-decoration: underline;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .box-major-event {
