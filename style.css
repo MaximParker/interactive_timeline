@@ -37,11 +37,35 @@ h3:hover {
     text-decoration: underline;
 }
 
+h4 {
+    position: relative;
+    left: 60px;
+    top: 13px;
+    min-width: max-content;
+    padding-left: 5px;
+}
+
+h4:hover {
+    text-decoration: underline;
+}
+
+h5 {
+    position: relative;
+    left: 20px;
+    top: -4px;
+    min-width: max-content;
+    padding-left: 5px;
+}
+
+h5:hover {
+    text-decoration: underline;
+}
+
 .box-major-event {
     position: absolute;
     top: 1000px;
     width: 150px;
-    border-top: 2px solid;
+    border-top: white 2px solid;
 }
 
 .icon-major-event {
@@ -51,4 +75,35 @@ h3:hover {
     width: 100px;
     border-radius: 50%;
     background-color: white;
+}
+
+.box-medium-event {
+    position: absolute;
+    top: 1100px;
+    width: 100px;
+    border-top: white 2px solid;
+}
+
+.icon-medium-event {
+    position: relative;
+    top: -31px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.box-minor-event {
+    position: absolute;
+    top: 1200px;
+    width: 200px;
+    border-top: white 2px solid;
+}
+
+.icon-minor-event {
+    position: relative;
+    top: -11px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
 }
