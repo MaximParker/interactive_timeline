@@ -1,3 +1,7 @@
+* {
+    cursor: crosshair;
+}
+
 .btn-circle.btn-xl {
     width: 100px;
     height: 100px;
@@ -13,10 +17,38 @@ img {
 
 .century-marker-dark {
     background-color: black;
-    height:100px;
+    height: 100px;
 }
 
 .century-marker-light {
     background-color: white;
-    height:100px;
+    height: 100px;
+}
+
+h3 {
+    position: relative;
+    left: 100px;
+    top: 28px;
+    min-width: max-content;
+    padding-left: 5px;
+}
+
+h3:hover {
+    text-decoration: underline;
+}
+
+.box-major-event {
+    position: absolute;
+    top: 1000px;
+    width: 150px;
+    border-top: 2px solid;
+}
+
+.icon-major-event {
+    position: relative;
+    top: -51px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
 }
