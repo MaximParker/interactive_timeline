@@ -49,44 +49,162 @@
 
             <div class="d-flex justify-content-start" style="height:1000px">
 
-                <div id="MAJOR_EVENT_ONE" class="d-flex justify-content-end box-major-event"
-                    style="border-top: 2px solid goldenrod;">
+                <div id="NEXUS" class="d-flex justify-content-end box-major-event"
+                    style="top:180px; width:130px; border-top: none;">
                     <div class="icon-major-event" data-toggle="modal" data-target="#exampleModal"
-                        style="background-color: goldenrod">
-                        <img src="images/placeholder.png" />
-                        <h3 style="color:goldenrod">MAJOR_EVENT_ONE »</h3>
+                        style="background-color: white">
+                        <img src="images/nexus.png" />
+                        <h3 style="color:white">Nexus is constructed »</h3>
                     </div>
                     <script>
-                        document.getElementById("MAJOR_EVENT_ONE").onclick = () => {
-                            document.getElementById('modalTitle').innerHTML = "MAJOR_EVENT_ONE"
-                            document.getElementById('modal-body').innerHTML = "MAJOR_EVENT_ONE"
+                        document.getElementById("NEXUS").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "The Nexus is constructed"
+                            document.getElementById('modal-body').innerHTML = "<p>In time immemorial, the structure at the heart of the universe was constructed.</p><p>It links together eight different constellations with one contiguous structure, producing gravity and water in abundance. Surrounding nebulae and stars cycle around each its eight summits.</p><p>A pair of almighty creatures are credited with its creation, but the Two's intentions for it remain unknown.</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="LIFE" class="d-flex justify-content-end box-major-event"
+                    style="top:320px; width:130px; border-top: none;">
+                    <div class="icon-major-event" data-toggle="modal" data-target="#exampleModal"
+                        style="background-color: aqua">
+                        <img src="images/PRIMORDIAL_SOUP.png" />
+                        <h3 style="color:aqua">Life emerges »</h3>
+                    </div>
+                    <script>
+                        document.getElementById("LIFE").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "Primitive lifeforms emerge on the Nexus"
+                            document.getElementById('modal-body').innerHTML = "<p>Accumulations of heat, rock and dust create the chemical conditions for life to emerge.</p><p>When They eventually notice (after several billion years), the Two cannot agree on what to do about it.</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="GUARDIANS" class="d-flex justify-content-end box-major-event"
+                    style="top:405px; width:230px; border-top: none;">
+                    <div class="icon-major-event" data-toggle="modal" data-target="#exampleModal"
+                        style="background-color: aqua">
+                        <img src="images/Guardians.png" />
+                        <h3 style="color:aqua">Divine Machines created »</h3>
+                    </div>
+                    <script>
+                        document.getElementById("GUARDIANS").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "The Great Compromise: Divine Machines"
+                            document.getElementById('modal-body').innerHTML = "<p>As a compromise, the Two raise rock from the summits of the Nexus to create eight 'Divine Machines'.</p><p>These machines are only meant to protect the creatures of the Nexus from existential threats, but not to intervene in their lives.</p><p>This causes a multitude of problems.</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="EVOLUTION" class="d-flex justify-content-end box-medium-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:490px; width:210px; border-top: none;">
+                    <div class="icon-medium-event" style="background-color: aqua">
+                        <img src="images/EVOLUTION.png" />
+                        <h4 style="color:aqua">Evolution converges »</h4>
+                    </div>
+                    <script>
+                        document.getElementById("EVOLUTION").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "Evolution converges"
+                            document.getElementById('modal-body').innerHTML = "<p>The creatures who stick by their guardian machine enjoy greater rates of survival, and so carry on similar traits, such as walking on two feet.</p>"
+                        }
+                    </script>
+                </div>
+
+
+                <div id="KAZAR_DESTROYED" class="d-flex justify-content-end box-major-event"
+                    style="top:570px; width:130px; border-top: 2px solid goldenrod;">
+                    <div class="icon-major-event" data-toggle="modal" data-target="#exampleModal"
+                        style="background-color: goldenrod">
+                        <img src="images/KAZAR_DESTROYED.png" />
+                        <h3 style="color:goldenrod">Kazar is destroyed »</h3>
+                    </div>
+                    <script>
+                        document.getElementById("KAZAR_DESTROYED").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "Kazar is killed by the Nexus"
+                            document.getElementById('modal-body').innerHTML = "<p>Frustrated and confused by his place in all this, one Divine Machine, Kazar, digs deep underground to uncover the secrets of the Nexus, hoping to find his destiny in the Grand Scheme of Things.</p><p>His attempt sees him destroyed, and his remnants strewn across the universe.</p><p>No-one knows what he saw, but some believe we could find out, if only we could find his eyes...</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="SKURGE" class="d-flex justify-content-end box-major-event"
+                    style="top:700px; width:130px; border-top: none;">
+                    <div class="icon-major-event" data-toggle="modal" data-target="#exampleModal"
+                        style="background-color: slategray">
+                        <img src="images/SKURGE.png" />
+                        <h3 style="color:slategray">Emergence of the Skurge »</h3>
+                    </div>
+                    <script>
+                        document.getElementById("SKURGE").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "Emergence of the Skurge"
+                            document.getElementById('modal-body').innerHTML = "<p>Hostile creatures emerge from the darkest corners of the world, spreading fear, disease, and death.</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="FEUD_WARS" class="d-flex justify-content-end box-medium-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:785px; border-top: none;">
+                    <div class="icon-medium-event" style="background-color: goldenrod">
+                        <img src="images/FEUD-WAR.png" />
+                        <h4 style="color:goldenrod">Feudal wars »</h4>
+                    </div>
+                    <script>
+                        document.getElementById("FEUD_WARS").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "Feudal wars escalate"
+                            document.getElementById('modal-body').innerHTML = "<p>Driven by fear, societies become highly militarised. Friction is resolved by bloodshed.</p>"
+                        }
+                    </script>
+                </div>
+
+                <div id="DIVINE_REGISTRY" class="d-flex justify-content-end box-medium-event" data-toggle="modal"
+                    data-target="#exampleModal" style="top:785px; width:300px; border-top: none;">
+                    <div class="icon-medium-event" style="background-color: goldenrod">
+                        <img src="images/placeholder.png" />
+                        <h4 style="color:goldenrod">Divine Registry »</h4>
+                    </div>
+                    <script>
+                        document.getElementById("DIVINE_REGISTRY").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "##"
+                            document.getElementById('modal-body').innerHTML = "##"
                         }
                     </script>
                 </div>
 
                 <div id="SIGNIFICANT_EVENT_ONE" class="d-flex justify-content-end box-medium-event" data-toggle="modal"
-                    data-target="#exampleModal" style="border-top: 2px solid yellow;">
+                    data-target="#exampleModal" style="top:850px; border-top: none;">
                     <div class="icon-medium-event" style="background-color: yellow">
                         <img src="images/placeholder.png" />
                         <h4 style="color:yellow">SIGNIFICANT_EVENT_ONE »</h4>
                     </div>
                     <script>
                         document.getElementById("SIGNIFICANT_EVENT_ONE").onclick = () => {
-                            document.getElementById('modalTitle').innerHTML = "SIGNIFICANT_EVENT_ONE"
-                            document.getElementById('modal-body').innerHTML = "SIGNIFICANT_EVENT_ONE"
+                            document.getElementById('modalTitle').innerHTML = "##"
+                            document.getElementById('modal-body').innerHTML = "##"
                         }
                     </script>
                 </div>
 
-                <div id="MINOR_EVENT_ONE" class="d-flex justify-content-end box-minor-event" data-toggle="modal"
-                    data-target="#exampleModal" style="border-top: lime 2px solid;">
-                    <div class="icon-minor-event" style="background-color: lime">
-                        <h5 style="color:lime">MINOR_EVENT_ONE »</h5>
+                <div id="BATTLE-OF-STATUES" class="d-flex justify-content-end box-minor-event"
+                    style="top:900px; width: 90px; border-top: none;">
+                    <div class="icon-minor-event" data-toggle="modal" data-target="#exampleModal"
+                        style="background-color: white">
+                        <h5 style="color:white">Battle for the City of Statues »</h5>
                     </div>
                     <script>
-                        document.getElementById("MINOR_EVENT_ONE").onclick = () => {
-                            document.getElementById('modalTitle').innerHTML = "MINOR_EVENT_ONE"
-                            document.getElementById('modal-body').innerHTML = "MINOR_EVENT_ONE"
+                        document.getElementById("BATTLE-OF-STATUES").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "Battle of Statues"
+                            document.getElementById('modal-body').innerHTML = "Xan de Lucian successfully leads the defence of the City of Statues from Skurge invasion, and is sanctified for his efforts."
+                        }
+                    </script>
+                </div>
+
+                <div id="BATTLE-OF-STATUES" class="d-flex justify-content-end box-minor-event"
+                    style="top:970px; width: 150px; border-top: white 2px solid;">
+                    <div class="icon-minor-event" data-toggle="modal" data-target="#exampleModal"
+                        style="background-color: white">
+                        <h5 style="color:white">Battle for the City of Statues »</h5>
+                    </div>
+                    <script>
+                        document.getElementById("BATTLE-OF-STATUES").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "Battle of Statues"
+                            document.getElementById('modal-body').innerHTML = "Xan de Lucian successfully leads the defence of the City of Statues from Skurge invasion, and is sanctified for his efforts."
                         }
                     </script>
                 </div>
@@ -116,6 +234,21 @@
 
             <div style="height:1000px">
                 <!-- Events -->
+
+                <div id="BATTLE-OF-STATUES" class="d-flex justify-content-end box-minor-event"
+                    style="top:1031px; width: 135px; border-top: 2px solid white;">
+                    <div class="icon-minor-event" data-toggle="modal" data-target="#exampleModal"
+                        style="background-color: white">
+                        <h5 style="color:white">Cult of Lucian »</h5>
+                    </div>
+                    <script>
+                        document.getElementById("BATTLE-OF-STATUES").onclick = () => {
+                            document.getElementById('modalTitle').innerHTML = "Battle of Statues"
+                            document.getElementById('modal-body').innerHTML = "Xan de Lucian successfully leads the defence of the City of Statues from Skurge invasion, and is sanctified for his efforts."
+                        }
+                    </script>
+                </div>
+
                 <div id="UNIM_FOUNDED" class="d-flex justify-content-end box-major-event"
                     style="top:1000px; border-top: 2px solid goldenrod;">
                     <div class="icon-major-event" data-toggle="modal" data-target="#exampleModal"
@@ -126,7 +259,7 @@
                     <script>
                         document.getElementById("UNIM_FOUNDED").onclick = () => {
                             document.getElementById('modalTitle').innerHTML = "The Union Imperium is founded"
-                            document.getElementById('modal-body').innerHTML = "<p>Records are scarce before this time thanks to centuries of war and destruction.</p><p>To remedy this, Saint Lucian calls together the highest scholars from across the Nexus to form the Union Imperium (Unim).</p>"
+                            document.getElementById('modal-body').innerHTML = "<p>Records are scarce before this time thanks to centuries of war and destruction.</p><p>To remedy this, Saint Lucian calls together the highest scholars from across the Nexus to form the Union Imperium (Unim). A Preceptor is elected as representative of all divined knowledge.</p>"
                         }
                     </script>
                 </div>
